@@ -11,12 +11,12 @@ const CONNECTION_STRING =
 // Do not connect to the client in this file!
 
 //const client = new Client(CONNECTION_STRING);
-const client = new Client({
+const client = new Client(CONNECTION_STRING){
   connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false
   }
-});
+};
 /**
  * Report Related Methods
  */
